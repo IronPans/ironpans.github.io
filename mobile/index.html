@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>FreeNG</title>
+    <meta name="description" content='独立开发的UI移动框架' />
+    <meta name='keywors' content='前端框架,移动,UI,HTML5,CSS3,铁锅,框架' />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="http://oumfrpm5j.bkt.clouddn.com/freeng_favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="mobile/styles/ui.css" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+</head>
+
+<body>
+<div class="ui-container">
+    <div class="motto-box">
+        <div class="motto">
+            <h4>FreeNG</h4>
+            <p>
+                FreeNG是一款基于Angular的UI框架，提供了诸多强大的可以重新组合的UI组件，门槛极低，拿来即用。
+            </p>
+            <p>
+                <img src="mobile/images/1507428538.png" alt="" />
+            </p>
+            <div class="works" onclick="location.href='http://ghmagical.com/'">
+                站主博客
+            </div>
+        </div>
+        <div class="review-phone">
+            <div class="phone-header">
+                <div class="phone-nav">
+                    <span class="phone-nav-dian">....</span>
+                    <div class="phone-nav-line"></div>
+                    <span class="fa fa-battery-half phone-battery"></span>
+                </div>
+            </div>
+            <div class="phone-container">
+                <iframe src="https://ironpans.github.io/freeng/" frameborder="0" width='318' height="502" frameborder="0"></iframe>
+            </div>
+            <div class="phone-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="updatebox">
+    <div class="timeline-container">
+        <h4>更新日志</h4>
+        <div class="timeline-item">
+            <div class="timeline-line">
+                <span class="d-block">V-0.3.1</span>
+            </div>
+            <div class="timelien-body">
+                <h2 class="timeline-title">201710081010</h2>
+                <div class="timeline-con">
+                    <h4>Features</h4>
+                    <ul>
+                        <li>优化了Panel的样式</li>
+                        <li>优化了Datatable的样式</li>
+                        <li>优化了Button的样式</li>
+                    </ul>
+                    <h4>Bug Fixes</h4>
+                    <ul>
+                        <li>修复Knob动态设值的问题</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="updatelog">
+    <i class="fa fa-angle-double-right"></i>
+</div>
+<script>
+    document.querySelector('.updatelog').onclick=function(){
+        var b=document.body.classList;
+        if(b.contains('open')){
+            b.remove('open');
+        }else{
+            b.add('open');
+        }
+    };
+</script>
+</body>
+
+</html>
